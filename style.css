@@ -1,8 +1,44 @@
 body{
     background-color: black;
     color: white;
+    font-family: sans-serif;
+
 }
 a{
     color: white;
     text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    font-family: sans-serif;
+    padding: 10px 10px;
+    border-bottom: 2px solid white;
+}
+input{
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 50%;
+    height: 40px;
+    outline: none;
+    /* margin: 0 auto; */
+
+}
+.inputbox{
+    border-bottom: 1px solid white;
+    /* margin: 10px 50px; */
+}
+#error{
+    color: red;
+    margin: 20px 0;
+}
+
+#btn{
+    color: black;
+    background-color: white;
+    padding: 8px 30px;
+    border: none;
+    outline: none;
 }

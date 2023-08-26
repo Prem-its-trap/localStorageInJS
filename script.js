@@ -3,16 +3,25 @@ function signup() {
   const email = document.getElementById("email");
   const pass = document.getElementById("password");
 
+  console.log(nam.value);
+  if (nam.value === "" && email.value === "" && pass.value === "") {
+    alert("all fields are mandatory");
+    return;
+  }
+
   localStorage.setItem("nam", nam.value);
   localStorage.setItem("email", email.value);
   localStorage.setItem("password", pass.value);
 }
 
 const heading = document.querySelector(".fullname");
-console.log(heading);
+const e = document.getElementById("e");
+const pa = document.getElementById("pa");
 
-heading.innerText = localStorage.getItem("nam");
+heading.innerText = "Fullname:" + localStorage.getItem("nam");
+e.innerText = "Email:" + localStorage.getItem("email");
+pa.innerText = "Password:" + localStorage.getItem("password");
 
-function setter() {}
-
-setter();
+function logout() {
+  localStorage.clear();
+}

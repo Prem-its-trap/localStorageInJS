@@ -18,15 +18,29 @@
       </nav>
     </header>
 
-    <main>
-      <!-- <form action=""> -->
-      <input type="text" id="nam" value="prem" />
-      <p id="pre"></p>
-      <input type="text" id="email" value="" />
-      <input type="password" id="password" />
-      <input type="password" id="confirmPassword" />
-      <!-- </form> -->
+    <main style="padding: 60px">
+      <!-- <form action="" style="border: 1px solid red; padding: 0 50px"> -->
+      <h1>Signup</h1>
+      <div class="inputbox">
+        <input type="text" id="nam" placeholder="Full Name" />
+      </div>
+      <div class="inputbox">
+        <input type="text" id="email" placeholder="Email" />
+      </div>
+      <div class="inputbox">
+        <input type="password" id="password" placeholder="Password" />
+      </div>
+      <div class="inputbox">
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+        />
+      </div>
+      <br />
+      <span id="error"></span><br />
       <a href="./profile.html"><button onclick="signup()">Signup</button></a>
+      <!-- </form> -->
     </main>
   </body>
 </html>
